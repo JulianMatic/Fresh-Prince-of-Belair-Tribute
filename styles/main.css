@@ -1,0 +1,104 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #c1f43c4d;
+  display: flex; /* Use flexbox for positioning "main" elements */
+  flex-direction: column; /* We want to position the "main" elements vertically stacked */
+  min-height: 100vh; /* Min height is set to make the page full screen */
+  margin: 0;
+}
+.header {
+  background-color: #ffffff;
+  min-height: 50px;
+  padding: 10px;
+  color: #646f46;
+}
+/* Layout classes for positioning main elements */
+.main {
+  display: flex; /* Flex is used to position the grid in the center both vertically and horizontally */
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Take up remaining free space */
+}
+.grid {
+  flex-grow: 1;
+  display: grid; /* Use built in css grid system for position elements inside this class */
+  grid-template-columns: auto auto auto; /* Setup grid in three column layout */
+  max-width: 1500px; /* Makes sure that we don't get unnecessary spacing between boxes on larger screens */
+}
+.footer {
+  min-height: 150px;
+  background-color: #e1f9a1;
+  padding: 10px; /* Space inside element */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #646f46;
+  font-size: 1.2rem;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: brown; */
+  height: 100%;
+}
+/* Class for defining the boxes with characters inside grid */
+.box {
+  width: 100%;
+  margin: 10px;
+  /* background-color: darkcyan; */
+  min-height: 300px;
+  max-width: 480px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 12px 54px rgba(0, 0, 0, 0.14);
+}
+.logo {
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.card-header {
+  height: 80%;
+  margin-bottom: -5px;
+}
+.card-body {
+  background-color: #ffffff;
+  height: 100%;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+.logo-img {
+  width: 100%; /* Makes sure the logo is contained inside its box */
+  height: auto;
+}
+.photo {
+  border-radius: 10px 10px 0 0;
+}
+/* Font size, colors etc */
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+p {
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #035cff;
+  font-weight: 600;
+}
+a:hover {
+  color: #3a80ff;
+}
